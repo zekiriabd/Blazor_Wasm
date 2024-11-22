@@ -1,0 +1,28 @@
+﻿@page "/"
+@using Refit;
+@inject IRefitServices RefitServices;
+
+<InputFile OnChange="@LoadFiles" multiple />
+<img src="@imageUrl" width="700px" height="500px" />
+
+@code 
+{
+    private string imageUrl { get; set; }
+    private async void LoadFiles(InputFileChangeEventArgs e)
+    {
+        var imageFile = await e.File.RequestImageFileAsync("image/png", maxWidth: 1024, maxHeight: 1024);
+        var streamPart = new StreamPart(imageFile.OpenReadStream(), e.File.Name, e.File.ContentType);
+        await RefitServices.UploadFile(streamPart);
+        imageUrl = $"http://localimages.net/{e.File.Name}";
+        this.StateHasChanged();
+
+        /* using (var memoryStream = new MemoryStream())
+       {
+           await fileStream.CopyToAsync(memoryStream);
+           imageData = $"data:image/png;base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+           this.StateHasChanged();
+       }*/
+
+    }
+
+}

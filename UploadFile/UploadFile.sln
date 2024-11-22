@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UploadFile", "UploadFile\UploadFile.csproj", "{A933B96F-DFF3-4345-8D26-31FFD15D3B8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadFileBack", "..\..\..\BackendApp\UploadFileBack\UploadFileBack.csproj", "{5A7FE758-D478-408D-A29C-B51B25F4964E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A933B96F-DFF3-4345-8D26-31FFD15D3B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A933B96F-DFF3-4345-8D26-31FFD15D3B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A933B96F-DFF3-4345-8D26-31FFD15D3B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A933B96F-DFF3-4345-8D26-31FFD15D3B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7FE758-D478-408D-A29C-B51B25F4964E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7FE758-D478-408D-A29C-B51B25F4964E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7FE758-D478-408D-A29C-B51B25F4964E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7FE758-D478-408D-A29C-B51B25F4964E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5A55816-C4F6-42D5-B421-7FA16DDD3229}
+	EndGlobalSection
+EndGlobal
