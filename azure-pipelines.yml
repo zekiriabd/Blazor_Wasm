@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '5ac5c8c7-c595-4355-9275-e873a4f5a9a4'
+  dockerRegistryServiceConnection: 'c2b213ae-c607-4d40-8226-5641ee466916'
   imageRepository: 'zekiriabdblazorwasm'
   containerRegistry: 'softwebcontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/BlazorWasmDocker/BlazorWasmDocker/Dockerfile'
